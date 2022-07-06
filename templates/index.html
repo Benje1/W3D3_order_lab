@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }} - Order list</title>
+    </head>
+    <body>
+        <h1>my order</h1>
+        {% for order in orders %}
+        <div>
+            <p>
+                {{ order.customer_name}} <b> Ordered on {{ order.order_date }}  {{ order.quantity }} {{ order.book_name }}</b>
+            </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
